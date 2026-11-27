@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tt xml:lang="en"
+    xmlns="http://www.w3.org/ns/ttml"
+    xmlns:tts="http://www.w3.org/ns/ttml#styling"
+    xmlns:ttp="http://www.w3.org/ns/ttml#parameter"
+    ttp:cellResolution="32 15"
+    tts:extent="1920px 1080px">
+  <head>
+    <styling>
+      <style xml:id="base" tts:fontSize="1c" tts:lineHeight="1.25"/>
+      <style xml:id="tiny" tts:fontSize="0.7c"/>
+    </styling>
+    <layout>
+      <region xml:id="bottom" style="base"
+              tts:origin="10% 80%" tts:extent="80% 15%"
+              tts:padding="0.5c 1c"
+              tts:displayAlign="after"
+              tts:overflow="hidden"/>
+      <region xml:id="top"
+              tts:origin="5% 5%" tts:extent="40% 10%"
+              tts:padding="10px"
+              tts:displayAlign="before"
+              tts:overflow="visible"
+              tts:wrapOption="noWrap"/>
+      <region xml:id="center" style="base tiny"
+              tts:origin="25% 42%" tts:extent="50% 16%"
+              tts:padding="1%"
+              tts:displayAlign="center"/>
+    </layout>
+  </head>
+  <body>
+    <div>
+      <p xml:id="cue1" begin="00:00:01.000" end="00:00:04.000" region="bottom">
+        This is a deliberately long subtitle line that must wrap inside the
+        padded bottom region and keep a safe reading distance from the edge.
+      </p>
+      <p xml:id="cue2" begin="00:00:05s" end="8s" region="top">
+        No-wrap headline that is wider than its narrow region
+      </p>
+      <p xml:id="cue3" begin="00:00:09:00" end="00:00:12:00" region="center">
+        Centered caption <span tts:fontSize="1.4em">with an enlarged
+        fragment</span> followed by more words to test mixed font sizes.
+      </p>
+      <p xml:id="cue4" begin="2s" end="6s" region="bottom">
+        Short line.
+      </p>
+    </div>
+  </body>
+</tt>
