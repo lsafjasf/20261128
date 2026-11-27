@@ -1,0 +1,607 @@
+[
+  {
+    "schema_version": 1,
+    "source": "artifacts/fixtures/delay_mismatch.wav",
+    "sample_rate": 48000,
+    "channels": 6,
+    "bits_per_sample": 16,
+    "codec": "PCM",
+    "duration_seconds": 6,
+    "channel_layout": [
+      "FL",
+      "FR",
+      "FC",
+      "LFE",
+      "BL",
+      "BR"
+    ],
+    "roles": {
+      "left": 0,
+      "right": 1,
+      "center": 2,
+      "lfe": 3
+    },
+    "low_hz": 20,
+    "high_hz": 120,
+    "channel_levels": [
+      {
+        "role": "L",
+        "index": 0,
+        "label": "FL",
+        "rms_dbfs": -12.184954546328388,
+        "low_rms_dbfs": -12.193768503358154,
+        "low_relative_to_main_db": 0,
+        "active": true
+      },
+      {
+        "role": "R",
+        "index": 1,
+        "label": "FR",
+        "rms_dbfs": -14.123155991806867,
+        "low_rms_dbfs": -14.14210189329719,
+        "low_relative_to_main_db": -1.9483333899390356,
+        "active": true
+      },
+      {
+        "role": "C",
+        "index": 2,
+        "label": "FC",
+        "rms_dbfs": -18.205551545061805,
+        "low_rms_dbfs": -59.80698549204299,
+        "low_relative_to_main_db": -47.61321698868484,
+        "active": true
+      },
+      {
+        "role": "LFE",
+        "index": 3,
+        "label": "LFE",
+        "rms_dbfs": -18.21038934484566,
+        "low_rms_dbfs": -18.21934430038928,
+        "low_relative_to_main_db": -6.025575797031127,
+        "active": true
+      }
+    ],
+    "pairs": [
+      {
+        "a": "L",
+        "b": "R",
+        "zero_lag_correlation": 0,
+        "best_correlation": -0.0013792204061509692,
+        "best_lag_samples": 1778,
+        "best_lag_ms": 37.041666666666664,
+        "lag_at_search_edge": false,
+        "gain_db": -59.152703832770754,
+        "reverse_gain_db": -55.26194920325891,
+        "lag_reliable": false
+      },
+      {
+        "a": "L",
+        "b": "C",
+        "zero_lag_correlation": 0,
+        "best_correlation": -0.005070706238004468,
+        "best_lag_samples": -745,
+        "best_lag_ms": -15.520833333333334,
+        "lag_at_search_edge": false,
+        "gain_db": -93.5139631896245,
+        "reverse_gain_db": 1.7167012387599927,
+        "lag_reliable": false
+      },
+      {
+        "a": "L",
+        "b": "LFE",
+        "zero_lag_correlation": 0.9380294052149908,
+        "best_correlation": 0.9999999999849778,
+        "best_lag_samples": 1056,
+        "best_lag_ms": 22,
+        "lag_at_search_edge": false,
+        "gain_db": -6.0205990730536385,
+        "reverse_gain_db": 6.020599072792676,
+        "lag_reliable": true
+      },
+      {
+        "a": "R",
+        "b": "C",
+        "zero_lag_correlation": 0.0010206105474448697,
+        "best_correlation": -0.005232628259089099,
+        "best_lag_samples": -557,
+        "best_lag_ms": -11.604166666666666,
+        "lag_at_search_edge": false,
+        "gain_db": -91.2923090452176,
+        "reverse_gain_db": 0.041104337644459206,
+        "lag_reliable": false
+      },
+      {
+        "a": "R",
+        "b": "LFE",
+        "zero_lag_correlation": 0,
+        "best_correlation": -0.0014433102582154232,
+        "best_lag_samples": 1825,
+        "best_lag_ms": 38.020833333333336,
+        "lag_at_search_edge": false,
+        "gain_db": -60.88171820400342,
+        "reverse_gain_db": -52.74389386209843,
+        "lag_reliable": false
+      },
+      {
+        "a": "C",
+        "b": "LFE",
+        "zero_lag_correlation": 0,
+        "best_correlation": -0.0050592941529692265,
+        "best_lag_samples": 1798,
+        "best_lag_ms": 37.458333333333336,
+        "lag_at_search_edge": false,
+        "gain_db": -4.323232871611671,
+        "reverse_gain_db": -87.5131699081827,
+        "lag_reliable": false
+      }
+    ],
+    "findings": [
+      {
+        "code": "delay_mismatch",
+        "severity": "warning",
+        "channels": [
+          "LFE"
+        ],
+        "reference": [
+          "L"
+        ],
+        "pair": "L/LFE",
+        "correlation": 0.9999999999849778,
+        "lag_samples": 1056,
+        "lag_ms": 22,
+        "message": "LFE is delayed by 22.000 ms (1056 samples at 48000 Hz) relative to L; low-band correlation is +1.000."
+      }
+    ],
+    "assessment": "A common low-frequency waveform is time-shifted between channels: check routing, alignment, and bass-management bypass.",
+    "warnings": [
+      "L/LFE is strongly correlated at both zero lag and +22.000 ms; a narrow-band waveform can make lag ambiguous by whole periods."
+    ]
+  },
+  {
+    "schema_version": 1,
+    "source": "artifacts/fixtures/inverted.wav",
+    "sample_rate": 48000,
+    "channels": 6,
+    "bits_per_sample": 16,
+    "codec": "PCM",
+    "duration_seconds": 6,
+    "channel_layout": [
+      "FL",
+      "FR",
+      "FC",
+      "LFE",
+      "BL",
+      "BR"
+    ],
+    "roles": {
+      "left": 0,
+      "right": 1,
+      "center": 2,
+      "lfe": 3
+    },
+    "low_hz": 20,
+    "high_hz": 120,
+    "channel_levels": [
+      {
+        "role": "L",
+        "index": 0,
+        "label": "FL",
+        "rms_dbfs": -12.184954901466188,
+        "low_rms_dbfs": -12.197878765615876,
+        "low_relative_to_main_db": 0,
+        "active": true
+      },
+      {
+        "role": "R",
+        "index": 1,
+        "label": "FR",
+        "rms_dbfs": -12.184954901466188,
+        "low_rms_dbfs": -12.197878765615876,
+        "low_relative_to_main_db": 0,
+        "active": true
+      },
+      {
+        "role": "C",
+        "index": 2,
+        "label": "FC",
+        "rms_dbfs": -12.184954901466188,
+        "low_rms_dbfs": -12.197878765615876,
+        "low_relative_to_main_db": 0,
+        "active": true
+      },
+      {
+        "role": "LFE",
+        "index": 3,
+        "label": "LFE",
+        "rms_dbfs": -12.184954901466188,
+        "low_rms_dbfs": -12.197878765615876,
+        "low_relative_to_main_db": 0,
+        "active": true
+      }
+    ],
+    "pairs": [
+      {
+        "a": "L",
+        "b": "R",
+        "zero_lag_correlation": 1,
+        "best_correlation": 1,
+        "best_lag_samples": 0,
+        "best_lag_ms": 0,
+        "lag_at_search_edge": false,
+        "gain_db": 0,
+        "reverse_gain_db": 0,
+        "lag_reliable": true
+      },
+      {
+        "a": "L",
+        "b": "C",
+        "zero_lag_correlation": -1,
+        "best_correlation": -1,
+        "best_lag_samples": 0,
+        "best_lag_ms": 0,
+        "lag_at_search_edge": false,
+        "gain_db": 0,
+        "reverse_gain_db": 0,
+        "lag_reliable": true
+      },
+      {
+        "a": "L",
+        "b": "LFE",
+        "zero_lag_correlation": -1,
+        "best_correlation": -1,
+        "best_lag_samples": 0,
+        "best_lag_ms": 0,
+        "lag_at_search_edge": false,
+        "gain_db": 0,
+        "reverse_gain_db": 0,
+        "lag_reliable": true
+      },
+      {
+        "a": "R",
+        "b": "C",
+        "zero_lag_correlation": -1,
+        "best_correlation": -1,
+        "best_lag_samples": 0,
+        "best_lag_ms": 0,
+        "lag_at_search_edge": false,
+        "gain_db": 0,
+        "reverse_gain_db": 0,
+        "lag_reliable": true
+      },
+      {
+        "a": "R",
+        "b": "LFE",
+        "zero_lag_correlation": -1,
+        "best_correlation": -1,
+        "best_lag_samples": 0,
+        "best_lag_ms": 0,
+        "lag_at_search_edge": false,
+        "gain_db": 0,
+        "reverse_gain_db": 0,
+        "lag_reliable": true
+      },
+      {
+        "a": "C",
+        "b": "LFE",
+        "zero_lag_correlation": 1,
+        "best_correlation": 1,
+        "best_lag_samples": 0,
+        "best_lag_ms": 0,
+        "lag_at_search_edge": false,
+        "gain_db": 0,
+        "reverse_gain_db": 0,
+        "lag_reliable": true
+      }
+    ],
+    "findings": [
+      {
+        "code": "polarity_inversion",
+        "severity": "error",
+        "channels": [
+          "C",
+          "LFE"
+        ],
+        "reference": [
+          "L",
+          "R"
+        ],
+        "pair": "L/C",
+        "correlation": -1,
+        "message": "C/LFE have opposite polarity to the reference group L/R in the low band (strongest r=-1.000 at +0.000 ms); this is a 180-degree phase/polarity fault candidate."
+      }
+    ],
+    "assessment": "A common low-frequency waveform has opposite polarity across channel groups: the listed channels are phase-inverted relative to the reference group."
+  },
+  {
+    "schema_version": 1,
+    "source": "artifacts/fixtures/lfe_rerouted.wav",
+    "sample_rate": 48000,
+    "channels": 6,
+    "bits_per_sample": 16,
+    "codec": "PCM",
+    "duration_seconds": 6,
+    "channel_layout": [
+      "FL",
+      "FR",
+      "FC",
+      "LFE",
+      "BL",
+      "BR"
+    ],
+    "roles": {
+      "left": 0,
+      "right": 1,
+      "center": 2,
+      "lfe": 3
+    },
+    "low_hz": 20,
+    "high_hz": 120,
+    "channel_levels": [
+      {
+        "role": "L",
+        "index": 0,
+        "label": "FL",
+        "rms_dbfs": -11.349395749544126,
+        "low_rms_dbfs": -11.380004022556506,
+        "low_relative_to_main_db": 0,
+        "active": true
+      },
+      {
+        "role": "R",
+        "index": 1,
+        "label": "FR",
+        "rms_dbfs": -11.35710095517404,
+        "low_rms_dbfs": -11.379878558654957,
+        "low_relative_to_main_db": 0,
+        "active": true
+      },
+      {
+        "role": "C",
+        "index": 2,
+        "label": "FC",
+        "rms_dbfs": -12.479625376987082,
+        "low_rms_dbfs": -13.318084489516853,
+        "low_relative_to_main_db": -1.938205930861896,
+        "active": true
+      },
+      {
+        "role": "LFE",
+        "index": 3,
+        "label": "LFE",
+        "rms_dbfs": -45.33645603473889,
+        "low_rms_dbfs": -45.359246192159915,
+        "low_relative_to_main_db": -33.97936763350496,
+        "active": true
+      }
+    ],
+    "pairs": [
+      {
+        "a": "L",
+        "b": "R",
+        "zero_lag_correlation": 0.9999960924898932,
+        "best_correlation": 0.9999960924898932,
+        "best_lag_samples": 0,
+        "best_lag_ms": 0,
+        "lag_at_search_edge": false,
+        "gain_db": 0.0000915054991548481,
+        "reverse_gain_db": -0.00015938603487052552,
+        "lag_reliable": true
+      },
+      {
+        "a": "L",
+        "b": "C",
+        "zero_lag_correlation": 0.9999933787007771,
+        "best_correlation": 0.9999933787007771,
+        "best_lag_samples": 0,
+        "best_lag_ms": 0,
+        "lag_at_search_edge": false,
+        "gain_db": -1.9381379983631701,
+        "reverse_gain_db": 1.9380229742337445,
+        "lag_reliable": true
+      },
+      {
+        "a": "L",
+        "b": "LFE",
+        "zero_lag_correlation": 0.999996081722199,
+        "best_correlation": 0.999996081722199,
+        "best_lag_samples": 0,
+        "best_lag_ms": 0,
+        "lag_at_search_edge": false,
+        "gain_db": -33.979276221620495,
+        "reverse_gain_db": 33.97920815403004,
+        "lag_reliable": true
+      },
+      {
+        "a": "R",
+        "b": "C",
+        "zero_lag_correlation": 0.9999973785529325,
+        "best_correlation": 0.9999973785529325,
+        "best_lag_samples": 0,
+        "best_lag_ms": 0,
+        "lag_at_search_edge": false,
+        "gain_db": -1.938228701695236,
+        "reverse_gain_db": 1.9381831624357038,
+        "lag_reliable": true
+      },
+      {
+        "a": "R",
+        "b": "LFE",
+        "zero_lag_correlation": 0.9999999943661357,
+        "best_correlation": 0.9999999943661357,
+        "best_lag_samples": 0,
+        "best_lag_ms": 0,
+        "lag_at_search_edge": false,
+        "gain_db": -33.9793676825274,
+        "reverse_gain_db": 33.979367584657155,
+        "lag_reliable": true
+      },
+      {
+        "a": "C",
+        "b": "LFE",
+        "zero_lag_correlation": 0.9999973588281086,
+        "best_correlation": 0.9999973588281086,
+        "best_lag_samples": 0,
+        "best_lag_ms": 0,
+        "lag_at_search_edge": false,
+        "gain_db": -32.04118464248467,
+        "reverse_gain_db": 32.04113876056895,
+        "lag_reliable": true
+      }
+    ],
+    "findings": [
+      {
+        "code": "lfe_rerouted",
+        "severity": "error",
+        "channels": [
+          "L",
+          "R",
+          "C"
+        ],
+        "pair": "LFE-\u003eL/R/C",
+        "correlation": 0.9999999943661357,
+        "gain_db": 33.979367584657155,
+        "message": "LFE is -45.4 dBFS, while its low-frequency waveform appears in L/R/C with up to +34.0 dB makeup gain (r=+1.000 at +0.000 ms)."
+      }
+    ],
+    "assessment": "The low LFE signal is coherently present in one or more main channels at substantially higher gain: evidence of LFE rerouting or leakage, not normal main-channel music."
+  },
+  {
+    "schema_version": 1,
+    "source": "artifacts/fixtures/normal_music.wav",
+    "sample_rate": 48000,
+    "channels": 6,
+    "bits_per_sample": 16,
+    "codec": "PCM",
+    "duration_seconds": 6,
+    "channel_layout": [
+      "FL",
+      "FR",
+      "FC",
+      "LFE",
+      "BL",
+      "BR"
+    ],
+    "roles": {
+      "left": 0,
+      "right": 1,
+      "center": 2,
+      "lfe": 3
+    },
+    "low_hz": 20,
+    "high_hz": 120,
+    "channel_levels": [
+      {
+        "role": "L",
+        "index": 0,
+        "label": "FL",
+        "rms_dbfs": -11.992378489746418,
+        "low_rms_dbfs": -12.200344963086119,
+        "low_relative_to_main_db": 0,
+        "active": true
+      },
+      {
+        "role": "R",
+        "index": 1,
+        "label": "FR",
+        "rms_dbfs": -13.422699708513788,
+        "low_rms_dbfs": -13.775064763653244,
+        "low_relative_to_main_db": -1.5747198005671255,
+        "active": true
+      },
+      {
+        "role": "C",
+        "index": 2,
+        "label": "FC",
+        "rms_dbfs": -16.62192919576533,
+        "low_rms_dbfs": -48.18823978111301,
+        "low_relative_to_main_db": -35.987894818026895,
+        "active": true
+      },
+      {
+        "role": "LFE",
+        "index": 3,
+        "label": "LFE",
+        "rms_dbfs": -11.357100119492216,
+        "low_rms_dbfs": -11.377639767041332,
+        "low_relative_to_main_db": 0.8227051960447866,
+        "active": true
+      }
+    ],
+    "pairs": [
+      {
+        "a": "L",
+        "b": "R",
+        "zero_lag_correlation": -0.002483270642829077,
+        "best_correlation": 0.006044789957506441,
+        "best_lag_samples": -1142,
+        "best_lag_ms": -23.791666666666668,
+        "lag_at_search_edge": false,
+        "gain_db": -45.96258712108599,
+        "reverse_gain_db": -42.78216428977355,
+        "lag_reliable": false
+      },
+      {
+        "a": "L",
+        "b": "C",
+        "zero_lag_correlation": 0,
+        "best_correlation": -0.013658455328181334,
+        "best_lag_samples": -648,
+        "best_lag_ms": -13.5,
+        "lag_at_search_edge": false,
+        "gain_db": -73.29156217479343,
+        "reverse_gain_db": -1.2923743620140233,
+        "lag_reliable": false
+      },
+      {
+        "a": "L",
+        "b": "LFE",
+        "zero_lag_correlation": -0.0011593935063715997,
+        "best_correlation": -0.002959822769285823,
+        "best_lag_samples": 937,
+        "best_lag_ms": 19.520833333333332,
+        "lag_at_search_edge": false,
+        "gain_db": -49.728931638564546,
+        "reverse_gain_db": -51.420440089694004,
+        "lag_reliable": false
+      },
+      {
+        "a": "R",
+        "b": "C",
+        "zero_lag_correlation": 0.0042369105641095325,
+        "best_correlation": -0.013966203590113567,
+        "best_lag_samples": -447,
+        "best_lag_ms": -9.3125,
+        "lag_at_search_edge": false,
+        "gain_db": -71.52079528069,
+        "reverse_gain_db": -2.6760699749123615,
+        "lag_reliable": false
+      },
+      {
+        "a": "R",
+        "b": "LFE",
+        "zero_lag_correlation": -0.001368903823613478,
+        "best_correlation": 0.0017602961631545048,
+        "best_lag_samples": -1746,
+        "best_lag_ms": -36.375,
+        "lag_at_search_edge": false,
+        "gain_db": -52.65999928604251,
+        "reverse_gain_db": -57.51657101950392,
+        "lag_reliable": false
+      },
+      {
+        "a": "C",
+        "b": "LFE",
+        "zero_lag_correlation": 0,
+        "best_correlation": -0.005117900811423119,
+        "best_lag_samples": 874,
+        "best_lag_ms": 18.208333333333332,
+        "lag_at_search_edge": false,
+        "gain_db": -8.986489574318599,
+        "reverse_gain_db": -82.64983583787496,
+        "lag_reliable": false
+      }
+    ],
+    "findings": [],
+    "assessment": "No coherent LFE routing, polarity inversion, or timing mismatch was found in the selected low band."
+  }
+]
