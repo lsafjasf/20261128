@@ -1,0 +1,11 @@
+1
+00:00:01,500 --> 00:00:05,500
+Hello, welcome to today's show
+
+2
+00:00:04,000 --> 00:00:09,000
+Third track: extra annotation that must not disappear
+
+3
+00:00:12,500 --> 00:00:17,500
+This is a manually reviewed key subtitle
