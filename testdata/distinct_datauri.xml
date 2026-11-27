@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tt xmlns="http://www.w3.org/ns/ttml"
+    xmlns:ttp="http://www.w3.org/ns/ttml#parameter"
+    xmlns:tts="http://www.w3.org/ns/ttml#styling">
+  <head><layout/></head>
+  <body>
+    <div xml:id="d1">
+      <p xml:id="c1" begin="00:00:01:00" end="00:00:02:00" region="r1">
+        <image src="data:image/png;base64,UE5HLUlNQUdFLUFMUEhB"/>
+      </p>
+      <p xml:id="c2" begin="00:00:02:00" end="00:00:03:00" region="r1">
+        <image src="data:image/png;base64,UE5HLUlNQUdFLUJFVEEtOTAwMA=="/>
+      </p>
+    </div>
+  </body>
+</tt>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tt xmlns="http://www.w3.org/ns/ttml"
+    xmlns:ttp="http://www.w3.org/ns/ttml#parameter"
+    xmlns:tts="http://www.w3.org/ns/ttml#styling"
+    xmlns:smpte="http://www.smpte-ra.org/schemas/2052-1/2010/smpte-tt"
+    xmlns:conv="urn:imscconv:v1"
+    ttp:extent="1920px 1080px">
+  <head>
+    <layout>
+      <region xml:id="topLeft" tts:origin="10px 20px" tts:extent="300px 200px" tts:displayAlign="before"/>
+      <region xml:id="topLeftCopy" tts:origin="10px 20px" tts:extent="300px 200px" tts:displayAlign="before"/>
+      <region xml:id="bottomRight" tts:origin="1500px 900px" tts:extent="300px 120px" tts:displayAlign="after" conv:regionFallback="topLeft"/>
+    </layout>
+    <smpte:image xml:id="logoA" smpte:imageType="image/png" smpte:encoding="Base64">UE5HLUlNQUdFLUFMUEhB</smpte:image>
+    <smpte:image xml:id="logoB" smpte:imageType="image/png" smpte:encoding="Base64">UE5HLUlNQUdFLUJFVEEtOTAwMA==</smpte:image>
+  </head>
+  <body>
+    <div xml:id="d1">
+      <p xml:id="cue1" begin="00:00:01:00" end="00:00:02:00" region="topLeft" smpte:backgroundImage="#logoA"/>
+      <p xml:id="cue2" begin="00:00:02:00" end="00:00:03:00" region="topLeftCopy" smpte:backgroundImage="#logoA"/>
+      <p xml:id="cue3" begin="00:00:03:00" end="00:00:04:00" region="bottomRight" smpte:backgroundImage="#logoB" conv:imageFallback="#logoA"/>
+      <p xml:id="cue4" begin="00:00:04:00" end="00:00:05:00" region="missingRegion" smpte:backgroundImage="#logoA"/>
+    </div>
+  </body>
+</tt>
