@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "targets": [
+    {
+      "version": "theatrical",
+      "references": [
+        "theatrical/feature_theatrical.mxf",
+        "theatrical/feature_theatrical_51.wav",
+        "theatrical/feature_theatrical_en.srt",
+        "theatrical/feature_theatrical_zh.srt"
+      ]
+    },
+    {
+      "version": "streaming",
+      "references": [
+        "streaming/feature_streaming.mxf",
+        "streaming/feature_streaming_51.wav",
+        "streaming/feature_streaming_en.srt"
+      ]
+    },
+    {
+      "version": "mobile",
+      "references": [
+        "mobile/feature_mobile.mp4",
+        "mobile/feature_mobile_stereo.m4a",
+        "mobile/feature_mobile_en.vtt"
+      ]
+    }
+  ]
+}

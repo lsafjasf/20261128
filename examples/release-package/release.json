@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "title": "Example Feature",
+  "versions": [
+    {
+      "id": "theatrical",
+      "label": "影院",
+      "window": {
+        "channel": "theatrical",
+        "start": "2026-12-01",
+        "end": "2027-02-28"
+      },
+      "video": {
+        "path": "theatrical/feature_theatrical.mxf",
+        "aspectRatio": "2.39:1",
+        "width": 4096,
+        "height": 1716
+      },
+      "audio": {
+        "path": "theatrical/feature_theatrical_51.wav",
+        "layout": "5.1",
+        "channels": 6,
+        "language": "en"
+      },
+      "subtitles": [
+        {
+          "path": "theatrical/feature_theatrical_en.srt",
+          "language": "en",
+          "kind": "full"
+        },
+        {
+          "path": "theatrical/feature_theatrical_zh.srt",
+          "language": "zh-Hans",
+          "kind": "sdh"
+        }
+      ]
+    },
+    {
+      "id": "streaming",
+      "label": "流媒体",
+      "window": {
+        "channel": "streaming",
+        "start": "2027-03-01",
+        "end": "2029-02-28"
+      },
+      "video": {
+        "path": "streaming/feature_streaming.mxf",
+        "aspectRatio": "16:9",
+        "width": 3840,
+        "height": 2160
+      },
+      "audio": {
+        "path": "streaming/feature_streaming_51.wav",
+        "layout": "5.1",
+        "channels": 6,
+        "language": "en"
+      },
+      "subtitles": [
+        {
+          "path": "streaming/feature_streaming_en.srt",
+          "language": "en",
+          "kind": "full"
+        }
+      ]
+    },
+    {
+      "id": "mobile",
+      "label": "移动端",
+      "window": {
+        "channel": "mobile",
+        "start": "2027-03-01",
+        "end": "2029-02-28"
+      },
+      "video": {
+        "path": "mobile/feature_mobile.mp4",
+        "aspectRatio": "9:16",
+        "width": 1080,
+        "height": 1920
+      },
+      "audio": {
+        "path": "mobile/feature_mobile_stereo.m4a",
+        "layout": "stereo",
+        "channels": 2,
+        "language": "en"
+      },
+      "subtitles": [
+        {
+          "path": "mobile/feature_mobile_en.vtt",
+          "language": "en",
+          "kind": "full"
+        }
+      ]
+    }
+  ],
+  "sharedManifests": [
+    {
+      "path": "shared/release.json",
+      "kind": "package",
+      "targets": [
+        {
+          "version": "theatrical",
+          "references": [
+            "theatrical/feature_theatrical.mxf",
+            "theatrical/feature_theatrical_51.wav",
+            "theatrical/feature_theatrical_en.srt",
+            "theatrical/feature_theatrical_zh.srt"
+          ]
+        },
+        {
+          "version": "streaming",
+          "references": [
+            "streaming/feature_streaming.mxf",
+            "streaming/feature_streaming_51.wav",
+            "streaming/feature_streaming_en.srt"
+          ]
+        },
+        {
+          "version": "mobile",
+          "references": [
+            "mobile/feature_mobile.mp4",
+            "mobile/feature_mobile_stereo.m4a",
+            "mobile/feature_mobile_en.vtt"
+          ]
+        }
+      ]
+    }
+  ]
+}
