@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tt xmlns="http://www.w3.org/ns/ttml"
+    xmlns:tts="http://www.w3.org/ns/ttml#styling"
+    tts:extent="640px 360px">
+  <head>
+    <styling>
+      <style xml:id="subtitle" tts:fontSize="32px" tts:lineHeight="40px"
+             tts:textAlign="center" tts:displayAlign="after"
+             tts:rubyPosition="before" tts:rubyAlign="center"/>
+    </styling>
+    <layout>
+      <region xml:id="bottom" style="subtitle"
+              tts:origin="10px 80px" tts:extent="100px 220px"/>
+    </layout>
+  </head>
+  <body>
+    <div>
+      <p region="bottom"><ruby><rb>漢字漢字</rb><rt>かんじかんじ</rt></ruby>と<ruby><rb>日本語</rb><rt>にほんご</rt></ruby>の字幕</p>
+    </div>
+  </body>
+</tt>

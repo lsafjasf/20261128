@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tt xmlns="http://www.w3.org/ns/ttml"
+    xmlns:tts="http://www.w3.org/ns/ttml#styling"
+    tts:extent="640px 360px">
+  <head>
+    <styling>
+      <style xml:id="subtitle" tts:fontSize="32px" tts:lineHeight="40px"
+             tts:textAlign="center" tts:displayAlign="after"
+             tts:rubyPosition="before" tts:rubyAlign="center"/>
+    </styling>
+    <layout>
+      <region xml:id="bottom" style="subtitle"
+              tts:origin="40px 260px" tts:extent="560px 80px"/>
+    </layout>
+  </head>
+  <body>
+    <div>
+      <p region="bottom"><ruby><rb><ruby><rb>漢</rb><rt>かん</rt></ruby></rb><rt>han</rt></ruby>字<ruby><rb>東</rb><rt>とう</rt><rt>tou</rt></ruby>京<br/>普通文字<ruby><rb>雨</rb><rt>あめ</rt><rt>yu</rt></ruby></p>
+    </div>
+  </body>
+</tt>
