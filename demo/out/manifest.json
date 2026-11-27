@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-27T18:04:48Z",
+  "hashAlgorithm": "sha256",
+  "pathStyle": "posix-relative",
+  "root": ".",
+  "entryCount": 10,
+  "totalSize": 170,
+  "entries": [
+    {
+      "path": "README.txt",
+      "class": "other",
+      "mime": "text/plain; charset=utf-8",
+      "ext": ".txt",
+      "size": 12,
+      "modTime": "2026-11-27T18:04:47Z",
+      "sha256": "8eb414594cf3796b22cab8d812525e8bd93610386cc760212123b57ccb9a0e16"
+    },
+    {
+      "path": "edits/backup_clip.mp4",
+      "class": "media",
+      "mediaKind": "video",
+      "mime": "video/mp4",
+      "ext": ".mp4",
+      "size": 21,
+      "modTime": "2026-11-27T18:04:47Z",
+      "sha256": "4ddb71b4017f62b64b9ddf682a0340d14857bcf411b09b9506835c020bd37c05"
+    },
+    {
+      "path": "edits/orphan.json",
+      "class": "sidecar",
+      "mime": "application/json",
+      "ext": ".json",
+      "size": 17,
+      "modTime": "2026-11-27T18:04:47Z",
+      "sha256": "7037468349d604c3fb04da438953a5c080daf97db1ffd167447c1a6d0ef2432d"
+    },
+    {
+      "path": "roll_a/DSC0001.CR2",
+      "class": "media",
+      "mediaKind": "image",
+      "mime": "image/x-canon-cr2",
+      "ext": ".cr2",
+      "size": 17,
+      "modTime": "2026-11-27T18:04:47Z",
+      "sha256": "0c54bd6c5caf9c00ab045f0732f48341cfe0b7c432068a0973956a237c8e1ba4"
+    },
+    {
+      "path": "roll_a/DSC0001.xmp",
+      "class": "sidecar",
+      "mime": "application/rdf+xml",
+      "ext": ".xmp",
+      "size": 15,
+      "modTime": "2026-11-27T18:04:47Z",
+      "sha256": "e1cdefe7f23dc438755729715416d8c418194d317310bed1585a01db5adda83a"
+    },
+    {
+      "path": "roll_a/MVI_0002.MP4",
+      "class": "media",
+      "mediaKind": "video",
+      "mime": "video/mp4",
+      "ext": ".mp4",
+      "size": 21,
+      "modTime": "2026-11-27T18:04:47Z",
+      "sha256": "4ddb71b4017f62b64b9ddf682a0340d14857bcf411b09b9506835c020bd37c05"
+    },
+    {
+      "path": "roll_a/MVI_0002.MP4.srt",
+      "class": "sidecar",
+      "mime": "application/x-subrip",
+      "ext": ".srt",
+      "size": 14,
+      "modTime": "2026-11-27T18:04:47Z",
+      "sha256": "a14a356db38ab09ab9aa41f8bb9d6e04701d0a38c85e1eac4bd4edc6d49dcd83"
+    },
+    {
+      "path": "roll_b/DSC0001.CR2",
+      "class": "media",
+      "mediaKind": "image",
+      "mime": "image/x-canon-cr2",
+      "ext": ".cr2",
+      "size": 17,
+      "modTime": "2026-11-27T18:04:47Z",
+      "sha256": "0c54bd6c5caf9c00ab045f0732f48341cfe0b7c432068a0973956a237c8e1ba4"
+    },
+    {
+      "path": "roll_b/DSC0001.xmp",
+      "class": "sidecar",
+      "mime": "application/rdf+xml",
+      "ext": ".xmp",
+      "size": 15,
+      "modTime": "2026-11-27T18:04:47Z",
+      "sha256": "861e033a870b421bed04016f52b728b4e808962a97c985703ece9c3c27db8cc6"
+    },
+    {
+      "path": "roll_b/MVI_0002.MP4",
+      "class": "media",
+      "mediaKind": "video",
+      "mime": "video/mp4",
+      "ext": ".mp4",
+      "size": 21,
+      "modTime": "2026-11-27T18:04:47Z",
+      "sha256": "4ddb71b4017f62b64b9ddf682a0340d14857bcf411b09b9506835c020bd37c05"
+    }
+  ],
+  "relationships": [
+    {
+      "mediaPath": "roll_a/DSC0001.CR2",
+      "sidecarPath": "roll_a/DSC0001.xmp",
+      "mediaHash": "0c54bd6c5caf9c00ab045f0732f48341cfe0b7c432068a0973956a237c8e1ba4",
+      "sidecarHash": "e1cdefe7f23dc438755729715416d8c418194d317310bed1585a01db5adda83a",
+      "rule": "same-directory basename match"
+    },
+    {
+      "mediaPath": "roll_a/MVI_0002.MP4",
+      "sidecarPath": "roll_a/MVI_0002.MP4.srt",
+      "mediaHash": "4ddb71b4017f62b64b9ddf682a0340d14857bcf411b09b9506835c020bd37c05",
+      "sidecarHash": "a14a356db38ab09ab9aa41f8bb9d6e04701d0a38c85e1eac4bd4edc6d49dcd83",
+      "rule": "same-directory basename match"
+    },
+    {
+      "mediaPath": "roll_b/DSC0001.CR2",
+      "sidecarPath": "roll_b/DSC0001.xmp",
+      "mediaHash": "0c54bd6c5caf9c00ab045f0732f48341cfe0b7c432068a0973956a237c8e1ba4",
+      "sidecarHash": "861e033a870b421bed04016f52b728b4e808962a97c985703ece9c3c27db8cc6",
+      "rule": "same-directory basename match"
+    }
+  ],
+  "duplicates": [
+    {
+      "sha256": "0c54bd6c5caf9c00ab045f0732f48341cfe0b7c432068a0973956a237c8e1ba4",
+      "size": 17,
+      "paths": [
+        "roll_a/DSC0001.CR2",
+        "roll_b/DSC0001.CR2"
+      ],
+      "wasted": 17
+    },
+    {
+      "sha256": "4ddb71b4017f62b64b9ddf682a0340d14857bcf411b09b9506835c020bd37c05",
+      "size": 21,
+      "paths": [
+        "edits/backup_clip.mp4",
+        "roll_a/MVI_0002.MP4",
+        "roll_b/MVI_0002.MP4"
+      ],
+      "wasted": 42
+    }
+  ],
+  "issues": [
+    {
+      "code": "orphan_sidecar",
+      "path": "edits/orphan.json",
+      "detail": "no media file named orphan in edits"
+    }
+  ],
+  "budget": {
+    "limit": 100,
+    "totalSize": 170,
+    "uniqueSize": 111,
+    "reclaimable": 59,
+    "over": true,
+    "ratio": 1.7
+  }
+}

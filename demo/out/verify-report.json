@@ -1,0 +1,59 @@
+{
+  "ok": true,
+  "strict": false,
+  "root": ".",
+  "intact": [
+    "README.txt"
+  ],
+  "rehomed": [
+    {
+      "oldPath": "edits/backup_clip.mp4",
+      "newPath": "2026/roll-b/MVI_0002.MP4",
+      "sha256": "4ddb71b4017f62b64b9ddf682a0340d14857bcf411b09b9506835c020bd37c05"
+    },
+    {
+      "oldPath": "edits/orphan.json",
+      "newPath": "orphan.json",
+      "sha256": "7037468349d604c3fb04da438953a5c080daf97db1ffd167447c1a6d0ef2432d"
+    },
+    {
+      "oldPath": "roll_a/DSC0001.CR2",
+      "newPath": "2026/roll-a/DSC0001.CR2",
+      "sha256": "0c54bd6c5caf9c00ab045f0732f48341cfe0b7c432068a0973956a237c8e1ba4"
+    },
+    {
+      "oldPath": "roll_a/DSC0001.xmp",
+      "newPath": "2026/roll-a/DSC0001.xmp",
+      "sha256": "e1cdefe7f23dc438755729715416d8c418194d317310bed1585a01db5adda83a"
+    },
+    {
+      "oldPath": "roll_a/MVI_0002.MP4",
+      "newPath": "2026/roll-a/MVI_0002.MP4",
+      "sha256": "4ddb71b4017f62b64b9ddf682a0340d14857bcf411b09b9506835c020bd37c05"
+    },
+    {
+      "oldPath": "roll_a/MVI_0002.MP4.srt",
+      "newPath": "2026/roll-a/MVI_0002.MP4.srt",
+      "sha256": "a14a356db38ab09ab9aa41f8bb9d6e04701d0a38c85e1eac4bd4edc6d49dcd83"
+    },
+    {
+      "oldPath": "roll_b/DSC0001.CR2",
+      "newPath": "2026/roll-b/DSC0001.CR2",
+      "sha256": "0c54bd6c5caf9c00ab045f0732f48341cfe0b7c432068a0973956a237c8e1ba4"
+    },
+    {
+      "oldPath": "roll_b/DSC0001.xmp",
+      "newPath": "2026/roll-b/DSC0001.xmp",
+      "sha256": "861e033a870b421bed04016f52b728b4e808962a97c985703ece9c3c27db8cc6"
+    },
+    {
+      "oldPath": "roll_b/MVI_0002.MP4",
+      "newPath": "proxies/clip_copy.mp4",
+      "sha256": "4ddb71b4017f62b64b9ddf682a0340d14857bcf411b09b9506835c020bd37c05"
+    }
+  ],
+  "missing": [],
+  "corrupt": [],
+  "extra": [],
+  "issues": []
+}

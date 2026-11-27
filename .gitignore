@@ -1,0 +1,5 @@
+# build outputs
+/lto-manifest
+/demo/lto-manifest
+*.test
+*.out
