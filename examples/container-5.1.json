@@ -1,0 +1,7 @@
+{
+  "container": "MOV",
+  "codec": "pcm_s24le",
+  "sample_rate": 48000,
+  "channel_count": 6,
+  "channel_order": ["FL", "FR", "FC", "LFE", "BL", "BR"]
+}

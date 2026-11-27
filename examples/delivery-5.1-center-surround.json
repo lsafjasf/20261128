@@ -1,0 +1,11 @@
+{
+  "name": "broadcast-5.1",
+  "channels": [
+    {"slot": 1, "label": "L"},
+    {"slot": 2, "label": "R"},
+    {"slot": 3, "label": "Ls"},
+    {"slot": 4, "label": "Rs"},
+    {"slot": 5, "label": "C"},
+    {"slot": 6, "label": "LFE"}
+  ]
+}
