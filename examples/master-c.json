@@ -1,0 +1,4 @@
+{"files": [
+  {"path": "./dist/app.bin", "algorithm": "sha256", "digest": "1976556c304df3c0f2c4ddd63643e572f97ae73ecdf178fce5e0d4d3eb84e565"},
+  {"path": "dist/lib.so", "algorithm": "blake3", "digest": "a4f1c2..."}
+]}
