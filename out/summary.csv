@@ -1,0 +1,5 @@
+method,source_peak_dbfs,output_peak_dbfs,peak_delta_db,transient_energy_delta_db,attack_slope_delta_db,residual_rms_lsb,residual_peak_lsb,residual_transient_rms_lsb,residual_transient_peak_lsb,residual_dc_lsb,residual_correlation,residual_repeat_correlation,residual_zcr,residual_hpf_rms_lsb,clamped_samples,onsets
+truncate,-0.500,-0.500,-0.0003,-0.0000,-0.0001,0.5749,0.9961,0.5790,0.9961,0.49766,-0.00072,1.00000,0.00000,0.2551,0,2
+tpdf_dither,-0.500,-0.500,0.0000,0.0000,0.0001,0.5006,1.4531,0.4968,1.3867,-0.00142,-0.00022,0.00426,0.49525,0.4425,0,2
+shaped_tpdf,-0.500,-0.500,-0.0003,0.0000,-0.0004,0.8124,2.6602,0.8104,2.6602,-0.00049,0.00029,-0.00428,0.66674,0.7388,0,2
+corrected_shaped_tpdf,-1.000,-1.000,-0.0002,0.0000,0.0000,0.8159,2.7852,0.8110,2.3906,-0.00047,0.00036,-0.00230,0.66729,0.7421,0,2
