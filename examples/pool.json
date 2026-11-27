@@ -1,0 +1,48 @@
+{
+  "assets": [
+    {
+      "id": "shot1#master.mov",
+      "path": "master.mov",
+      "duration": 10,
+      "width": 3840,
+      "height": 2160,
+      "frameRate": 60,
+      "rotation": 0,
+      "codec": "prores",
+      "bitrateK": 48000,
+      "video": { "rotation": 0, "frames": [15, 12297829382473034131, 720575940379279375] },
+      "audio": { "points": [15, 81985529216486895, 163971058432973775] }
+    },
+    {
+      "id": "shot1#rotated.mp4",
+      "path": "rotated.mp4",
+      "duration": 10,
+      "width": 2160,
+      "height": 3840,
+      "frameRate": 24,
+      "rotation": 90,
+      "codec": "h264",
+      "bitrateK": 9000,
+      "video": { "rotation": 90, "frames": [15, 12297829382473034131, 720575940379279375] },
+      "audio": { "points": [15, 81985529216486895, 163971058432973775] }
+    },
+    {
+      "id": "shot2#other.mov",
+      "path": "other.mov",
+      "duration": 10,
+      "width": 1920,
+      "height": 1080,
+      "frameRate": 30,
+      "rotation": 0,
+      "codec": "h264",
+      "bitrateK": 6000,
+      "video": { "rotation": 0, "frames": [18446744073709551600, 6148914691236517205, 17725168133330272240] },
+      "audio": { "points": [18446744073709551600, 18364758544493064720, 18282773015276577840] }
+    }
+  ],
+  "clips": [
+    { "id": "c1", "trackId": "V1", "assetId": "shot1#rotated.mp4", "start": 0, "sourceIn": 0, "sourceOut": 5 },
+    { "id": "c2", "trackId": "V1", "assetId": "shot2#other.mov", "start": 5, "sourceIn": 0, "sourceOut": 5 }
+  ],
+  "masters": {}
+}
