@@ -1,0 +1,127 @@
+{
+  "media": [
+    {
+      "uid": "D1-UID-0001",
+      "path": "day1/Reel_A/C0001.mov",
+      "size": 31,
+      "hashAlgo": "sha256",
+      "hash": "b2fe60d132fcce5c86c20c1f3b5943e38ff45cb744bfacdf97dffd5745e5958e",
+      "shootDay": "day1"
+    },
+    {
+      "uid": "D1-UID-0002",
+      "path": "day1/Reel_A/C0002.mov",
+      "size": 31,
+      "hashAlgo": "sha256",
+      "hash": "2921cd6320b7ff648d906215c934f2e0a4ec6d52046a024d3aca3e252cfcfbb6",
+      "shootDay": "day1"
+    },
+    {
+      "uid": "D1-UID-0003",
+      "path": "day1/Reel_A/C0003.mov",
+      "size": 31,
+      "hashAlgo": "sha256",
+      "hash": "ac8820106b02d32be1110982e4685ab78748d9c1186ff6f9784e0568b47d4feb",
+      "shootDay": "day1"
+    },
+    {
+      "uid": "D1-UID-0004",
+      "path": "day1/Reel_A/C0004.mov",
+      "size": 31,
+      "hashAlgo": "sha256",
+      "hash": "59f6c6f86a5393e92bba19c3134f7d2a33dda9c211ed9542dba71fcf99702ed2",
+      "shootDay": "day1"
+    },
+    {
+      "uid": "D2-UID-0001",
+      "path": "day2/Reel_A/C0001.mov",
+      "size": 31,
+      "hashAlgo": "sha256",
+      "hash": "440b73823433ffb46c8a388bafb03d9c9ccb2ef505a41f9ba1056b711b6da4b1",
+      "shootDay": "day2"
+    },
+    {
+      "uid": "D2-UID-0002",
+      "path": "day2/Reel_A/C0002.mov",
+      "size": 31,
+      "hashAlgo": "sha256",
+      "hash": "6b3a279e0414a1a29c97ec98a9407058d05d1096398ccce5f1f45a0bf559be47",
+      "shootDay": "day2"
+    },
+    {
+      "uid": "D2-UID-0003",
+      "path": "day2/Reel_A/C0003.mov",
+      "size": 30,
+      "hashAlgo": "sha256",
+      "hash": "deadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeef",
+      "shootDay": "day2"
+    },
+    {
+      "uid": "D2-UID-0003B",
+      "path": "day2/Reel_A/C0004.mov",
+      "size": 30,
+      "hashAlgo": "sha256",
+      "hash": "6ee4b7775f39899e08d5eb55006adf6004bc2f0c8085ccf7bf9477b26e04a246",
+      "shootDay": "day2"
+    }
+  ],
+  "clips": [
+    {
+      "id": "D1-C0001",
+      "shootDay": "day1",
+      "bin": "Reel_A",
+      "clipNo": "C0001",
+      "lockedUID": "D1-UID-0001",
+      "lockedHash": "b2fe60d132fcce5c86c20c1f3b5943e38ff45cb744bfacdf97dffd5745e5958e"
+    },
+    {
+      "id": "D2-C0001",
+      "shootDay": "day2",
+      "bin": "Reel_A",
+      "clipNo": "C0001",
+      "lockedUID": "D1-UID-0001",
+      "lockedHash": "b2fe60d132fcce5c86c20c1f3b5943e38ff45cb744bfacdf97dffd5745e5958e",
+      "expectedUID": "D2-UID-0001"
+    },
+    {
+      "id": "D2-C0002",
+      "shootDay": "day2",
+      "bin": "Reel_A",
+      "clipNo": "C0002",
+      "lockedUID": "D1-UID-0002",
+      "lockedHash": "2921cd6320b7ff648d906215c934f2e0a4ec6d52046a024d3aca3e252cfcfbb6"
+    },
+    {
+      "id": "D1-C0003A",
+      "shootDay": "day1",
+      "bin": "Reel_A",
+      "clipNo": "C0003",
+      "lockedUID": "D1-UID-0003",
+      "lockedHash": "ac8820106b02d32be1110982e4685ab78748d9c1186ff6f9784e0568b47d4feb"
+    },
+    {
+      "id": "D1-C0003B",
+      "shootDay": "day1",
+      "bin": "Reel_A",
+      "clipNo": "C0003",
+      "lockedUID": "D1-UID-0004",
+      "lockedHash": "59f6c6f86a5393e92bba19c3134f7d2a33dda9c211ed9542dba71fcf99702ed2"
+    },
+    {
+      "id": "D2-C0003",
+      "shootDay": "day2",
+      "bin": "Reel_A",
+      "clipNo": "C0003",
+      "lockedUID": "D2-UID-0003",
+      "lockedHash": "3dcc36a0bc125f2c74132fdea7d0519af93eaa0eafe90b9040439fd8f4ea24e0"
+    },
+    {
+      "id": "D2-C0004",
+      "shootDay": "day2",
+      "bin": "Reel_A",
+      "clipNo": "C0004",
+      "lockedUID": "D2-UID-0003B",
+      "lockedHash": "6ee4b7775f39899e08d5eb55006adf6004bc2f0c8085ccf7bf9477b26e04a246"
+    }
+  ]
+}
