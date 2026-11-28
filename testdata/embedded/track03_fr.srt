@@ -1,0 +1,11 @@
+1
+00:00:02,000 --> 00:00:05,000
+Bonjour et bienvenue.
+
+2
+00:00:06,000 --> 00:00:09,000
+Parlons des images par seconde.
+
+3
+00:00:12,000 --> 00:00:15,000
+Merci d'avoir regarde.

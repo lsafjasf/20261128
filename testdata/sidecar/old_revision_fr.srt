@@ -1,0 +1,15 @@
+1
+00:00:01,960 --> 00:00:04,960
+Bonjour a tous et bienvenue dans l'emission.
+
+2
+00:00:05,960 --> 00:00:08,960
+Le sujet du jour est la synchronisation.
+
+3
+00:00:11,960 --> 00:00:14,960
+C'est tout pour aujourd'hui.
+
+4
+00:00:15,500 --> 00:00:17,000
+A la prochaine.
